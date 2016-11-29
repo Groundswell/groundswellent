@@ -15,19 +15,22 @@
 		.navbar-collapse.collapse#stamp-navigation
 			%ul.nav.navbar-nav.navbar-left.main-navigation.small-text
 				%li
-					%a{ href: '#section1' }
+					%a{ href: "#{swell_media.root_path()}#section1" }
 						Services
 				%li
-					%a{ href: '#section2' }
+					%a{ href: "#{swell_media.root_path()}#section2" }
 						About
 				%li
-					%a{ href: '#section3' }
+					%a{ href: "#{swell_media.root_path()}#section3" }
 						Testimonials
+				%li
+					%a{ href: swell_media.articles_path() }
+						Blog
 
 			%ul.nav.navbar-nav.navbar-right.login-register.small-text
 				-# %li.login.js-login
 					%a{ href: login_path }
 						Login
 				%li.register-button.js-register.inpage-scroll
-					%a.navbar-register-button{ href: "#home" }
+					%a.navbar-register-button{ href: "#{swell_media.root_path()}#home" }
 						Get Started
