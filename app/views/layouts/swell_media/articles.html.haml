@@ -16,7 +16,11 @@
 
 		%section#main
 			= render 'application/flash'
-			= yield
+
+			.container
+				.row
+					.col-xs-12
+						= yield
 
 		%footer#footer
 			= render 'application/footer'
