@@ -5,10 +5,10 @@ $(window).load(function() {
     /*---------------------------------------*/
     /*	WOW FOR ANIMATION ON SCROLL
 	/*---------------------------------------*/
-    var wow = new WOW({
-        mobile: false
-    });
-    wow.init();
+    // var wow = new WOW({
+    //     mobile: false
+    // });
+    // wow.init();
 
     /*---------------------------------------*/
     /*	NAVIGATION
@@ -56,20 +56,20 @@ $(window).resize(function() {
     /*	MAILCHIMP
 	/*---------------------------------------*/
 
-    $('.mailchimp').ajaxChimp({
-        callback: mailchimpCallback,
-        url: "http://webdesign7.us6.list-manage.com/subscribe/post?u=9445a2e155b82208d73433060&amp;id=16dc80e353" //Replace this with your own mailchimp post URL. Don't remove the "". Just paste the url inside "".  
-    });
+    // $('.mailchimp').ajaxChimp({
+    //     callback: mailchimpCallback,
+    //     url: "http://webdesign7.us6.list-manage.com/subscribe/post?u=9445a2e155b82208d73433060&amp;id=16dc80e353" //Replace this with your own mailchimp post URL. Don't remove the "". Just paste the url inside "".
+    // });
 
-    function mailchimpCallback(resp) {
-        if (resp.result === 'success') {
-            $('.mailchimp-success').fadeIn(1000);
-            $('.mailchimp-error').fadeOut(500);
-        } else if (resp.result === 'error') {
-            $('.mailchimp-error').fadeIn(1000);
-            $('.mailchimp-success').fadeOut(500);
-        }
-    }
+    // function mailchimpCallback(resp) {
+    //     if (resp.result === 'success') {
+    //         $('.mailchimp-success').fadeIn(1000);
+    //         $('.mailchimp-error').fadeOut(500);
+    //     } else if (resp.result === 'error') {
+    //         $('.mailchimp-error').fadeIn(1000);
+    //         $('.mailchimp-success').fadeOut(500);
+    //     }
+    // }
 
 
     /*---------------------------------------*/
@@ -167,21 +167,21 @@ $(window).resize(function() {
     /*	SCREENSHOT CAROUSEL
 	/*---------------------------------------*/
 
-    $("#screenshots").owlCarousel({
-        navigation: false,
-        slideSpeed: 300,
-        paginationSpeed: 400,
-        singleItem: true
-    });
+    // $("#screenshots").owlCarousel({
+    //     navigation: false,
+    //     slideSpeed: 300,
+    //     paginationSpeed: 400,
+    //     singleItem: true
+    // });
 
 
     /*---------------------------------------*/
     /*	SCREENSHOT LIGHTBOX
 	/*---------------------------------------*/
 
-    $('#screenshots a').nivoLightbox({
-        effect: 'fadeScale',
-    });
+    // $('#screenshots a').nivoLightbox({
+    //     effect: 'fadeScale',
+    // });
 
 
     /*---------------------------------------*/
@@ -244,58 +244,58 @@ $(window).resize(function() {
 
 
 
-/*---------------------------------------*/
-/*	GOOGLE MAP
-/*---------------------------------------*/
-jQuery(document).ready(function($) {
-
-    "use strict";
-    //set your google maps parameters
-    var $latitude = 51.522532, //If you unable to find latitude and longitude of your address. Please visit http://www.latlong.net/convert-address-to-lat-long.html you can easily generate.
-        $longitude = 0.031639,
-        $map_zoom = 16; /* ZOOM SETTING */
-
-    //google map custom marker icon - .png fallback for IE11
-    var is_internetExplorer11 = navigator.userAgent.toLowerCase().indexOf('trident') > -1;
-    var $marker_url = (is_internetExplorer11) ? 'images/map-marker.png' : 'images/map-marker.svg';
-
-    //we define here the style of the map
-    var style = [{
-        "stylers": [{
-            "hue": "#00aaff"
-        }, {
-            "saturation": -100
-        }, {
-            "gamma": 2.15
-        }, {
-            "lightness": 12
-        }]
-    }];
-
-    //set google map options
-    var map_options = {
-        center: new google.maps.LatLng($latitude, $longitude),
-        zoom: $map_zoom,
-        panControl: true,
-        zoomControl: true,
-        mapTypeControl: false,
-        streetViewControl: true,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        scrollwheel: false,
-        styles: style,
-    }
-    //inizialize the map
-    var map = new google.maps.Map(document.getElementById('google-container'), map_options);
-    //add a custom marker to the map				
-    var marker = new google.maps.Marker({
-        position: new google.maps.LatLng($latitude, $longitude),
-        map: map,
-        visible: true,
-        icon: $marker_url,
-    });
-
-  
-});
+// /*---------------------------------------*/
+// /*	GOOGLE MAP
+// /*---------------------------------------*/
+// jQuery(document).ready(function($) {
+//
+//     "use strict";
+//     //set your google maps parameters
+//     var $latitude = 51.522532, //If you unable to find latitude and longitude of your address. Please visit http://www.latlong.net/convert-address-to-lat-long.html you can easily generate.
+//         $longitude = 0.031639,
+//         $map_zoom = 16; /* ZOOM SETTING */
+//
+//     //google map custom marker icon - .png fallback for IE11
+//     var is_internetExplorer11 = navigator.userAgent.toLowerCase().indexOf('trident') > -1;
+//     var $marker_url = (is_internetExplorer11) ? 'images/map-marker.png' : 'images/map-marker.svg';
+//
+//     //we define here the style of the map
+//     var style = [{
+//         "stylers": [{
+//             "hue": "#00aaff"
+//         }, {
+//             "saturation": -100
+//         }, {
+//             "gamma": 2.15
+//         }, {
+//             "lightness": 12
+//         }]
+//     }];
+//
+//     //set google map options
+//     var map_options = {
+//         center: new google.maps.LatLng($latitude, $longitude),
+//         zoom: $map_zoom,
+//         panControl: true,
+//         zoomControl: true,
+//         mapTypeControl: false,
+//         streetViewControl: true,
+//         mapTypeId: google.maps.MapTypeId.ROADMAP,
+//         scrollwheel: false,
+//         styles: style,
+//     }
+//     //inizialize the map
+//     var map = new google.maps.Map(document.getElementById('google-container'), map_options);
+//     //add a custom marker to the map
+//     var marker = new google.maps.Marker({
+//         position: new google.maps.LatLng($latitude, $longitude),
+//         map: map,
+//         visible: true,
+//         icon: $marker_url,
+//     });
+//
+//
+// });
 
 
 /*---------------------------------------*/

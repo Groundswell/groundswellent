@@ -18,6 +18,7 @@ gem 'coffee-rails', '~> 4.1.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'jquery-ui-rails', '< 6'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -30,7 +31,7 @@ gem 'carrierwave'
 gem 'unicorn'
 
 # dev
-# gem 'swell_media', path: '../../shopswell/engines/swell_media', branch: 'refact'
+# gem 'swell_media', path: '../../engines/swell_media', branch: 'refact'
 
 # prod
 gem 'swell_media', git: 'git://github.com/playswell/swell_media.git', branch: 'refact'
