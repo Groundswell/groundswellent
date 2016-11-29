@@ -27,6 +27,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'carrierwave'
 
+gem 'unicorn'
 
 # dev
 # gem 'swell_media', path: '../../shopswell/engines/swell_media', branch: 'refact'
