@@ -28,6 +28,7 @@
 			= "'#{@category}'"
 
 	= raw paginate @articles
-	- @articles.each do |article|
-		= render 'row', article: article
+	.text-left
+		- @articles.each do |article|
+			= render 'row', article: article
 	= raw paginate @articles
