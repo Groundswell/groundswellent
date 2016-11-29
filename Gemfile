@@ -27,7 +27,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'carrierwave'
 
-gem 'swell_media', path: '../../shopswell/engines/swell_media'
+
+# dev
+# gem 'swell_media', path: '../../shopswell/engines/swell_media', branch: 'refact'
+
+# prod
+gem 'swell_media', git: 'git://github.com/playswell/swell_media.git', branch: 'refact'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
