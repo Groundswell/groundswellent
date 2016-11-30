@@ -20,7 +20,7 @@
 								= tag.name
 		- if @media.avatar.present? || @media.cover_path.present?
 			.post-avatar{ style: 'text-align:center;' }
-				= image_tag @media.cover_path || @media.avatar
+				= image_tag @media.cover_path || @media.avatar, class: 'center-block img-responsive'
 
 		.post-content
 			= raw @media.content
