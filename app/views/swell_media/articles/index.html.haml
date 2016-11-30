@@ -1,34 +1,34 @@
-.container
-	%h3.headline.first-child
-		%span
-			Blog
-	- if @author.present?
-		%h1
-			= pluralize @count, 'Article'
-			by
-			= @author.avatar_tag( width: 36 )
-			= @author
 
-	- if @query.present?
-		%h1
-			= pluralize @count, 'Article'
-			matching
-			= "'#{@query}'"
+%h3.headline.first-child.text-center
+	%span
+		Blog
+- if @author.present?
+	%h1
+		= pluralize @count, 'Article'
+		by
+		= @author.avatar_tag( width: 36 )
+		= @author
 
-	- if @tagged.present?
-		%h1
-			= pluralize @count, 'Article'
-			tagged
-			= "'#{@tagged}'"
+- if @query.present?
+	%h1
+		= pluralize @count, 'Article'
+		matching
+		= "'#{@query}'"
 
-	- if @category.present?
-		%h1
-			= pluralize @count, 'Article'
-			in
-			= "'#{@category}'"
+- if @tagged.present?
+	%h1
+		= pluralize @count, 'Article'
+		tagged
+		= "'#{@tagged}'"
 
-	= raw paginate @articles
-	.text-left
-		- @articles.each do |article|
-			= render 'row', article: article
-	= raw paginate @articles
+- if @category.present?
+	%h1
+		= pluralize @count, 'Article'
+		in
+		= "'#{@category}'"
+
+= raw paginate @articles
+.text-left
+	- @articles.each do |article|
+		= render 'row', article: article
+= raw paginate @articles
