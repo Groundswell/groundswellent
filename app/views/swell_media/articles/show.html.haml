@@ -18,9 +18,9 @@
 						%a.post-tag{ href: articles_path( tagged: tag.name ) }
 							%span.label.label-info
 								= tag.name
-		- if @media.avatar.present?
+		- if @media.avatar.present? || @media.cover_path.present?
 			.post-avatar{ style: 'text-align:center;' }
-				= image_tag @media.avatar
+				= image_tag @media.cover_path || @media.avatar
 
 		.post-content
 			= raw @media.content
