@@ -5,10 +5,10 @@ $(window).load(function() {
     /*---------------------------------------*/
     /*	WOW FOR ANIMATION ON SCROLL
 	/*---------------------------------------*/
-    // var wow = new WOW({
-    //     mobile: false
-    // });
-    // wow.init();
+    var wow = new WOW({
+        mobile: false
+    });
+    wow.init();
 
     /*---------------------------------------*/
     /*	NAVIGATION
