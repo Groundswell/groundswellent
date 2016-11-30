@@ -526,7 +526,7 @@ strong,
 }
 
 .sticky-navigation .navbar-brand img {
-	max-width: 80px;
+	/*max-width: 80px;*/
 	-webkit-backface-visibility: hidden;
 }
 
@@ -566,7 +566,7 @@ strong,
 }
 
 .only-logo .navbar-header img {
-	max-width: 80px;
+	/* max-width: 80px; */
 }
 /* INTRO */
 .intro-section {
