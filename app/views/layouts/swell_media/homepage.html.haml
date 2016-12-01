@@ -9,7 +9,11 @@
 		= render 'application/html_head', args: {}
 		= render 'application/header_styles'
 		= render 'application/header_scripts'
+
+		%meta{ name: "google-site-verification", content: "y7fuNrbkIZIcrCnYO_OvG2KDQErqhofCWyG1TUMCSv8" }
 	%body
 		= yield
 		
 		= render 'application/footer_scripts'
+
+		= render 'application/analytics'
