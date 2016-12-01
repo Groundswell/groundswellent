@@ -9,7 +9,7 @@
 				%a{href: articles_path( by: @media.user_id )}
 					= @media.user.avatar_tag( width: 20 )
 					= @media.user
-			%span.info-item
+			-#%span.info-item
 				= @media.publish_at.strftime('%B %e, %Y')
 			- if @media.tags.present?
 				%span.info-item
