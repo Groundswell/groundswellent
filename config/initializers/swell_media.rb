@@ -19,8 +19,8 @@ SwellMedia.configure do |config|
 
 	config.froala_editor_key = ENV['FROALA_EDITOR_KEY']
 
-	# config.contact_email_to 	= false
-	# config.contact_email_from = false
+	config.contact_email_to		= ENV['CONTACT_EMAIL_TO']
+	config.contact_email_from	= ENV['CONTACT_EMAIL_FROM']
 
 end
 
