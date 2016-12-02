@@ -30,6 +30,8 @@ gem 'carrierwave'
 
 gem 'newrelic_rpm'
 
+gem 'sendgrid-ruby'
+
 gem 'unicorn'
 
 # dev
