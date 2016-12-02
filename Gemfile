@@ -28,6 +28,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'carrierwave'
 
+gem 'newrelic_rpm'
+
 gem 'unicorn'
 
 # dev
