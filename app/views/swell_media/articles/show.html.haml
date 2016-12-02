@@ -29,5 +29,19 @@
 		%section#comments
 			= render 'application/comments'
 
+%section.team
+	.row.wow.fadeIn{"data-wow-duration" => "1.75s", "data-wow-offset" => "10"}
+		.col-md-12.wow.flipInY{"data-wow-duration" => "1s", "data-wow-offset" => "10", style: 'margin-top: 50px;padding-top: 10px;padding-bottom: 10px;background: #f4f4f4;border: 1px solid #eee;border-radius: 5px;'}
+
+			-# .member-details{ style: 'margin: 0 -10px; padding: 10px;' }
+			%h5.colored-text About Groundswell Enterprises
+
+			%p
+				Groundswell delivers solutions for your web and mobile applications at any stage, from inception to scaling. Backed by a team of product, full stack, mobile, and UI/UX specialists we are able to handle projects of varied scale and technology.
+			%p
+				We're available for projects large and small. We'd love to hear from you.
+			.text-center
+				%a.btn.btn-lg.btn-primary{ href: swell_media.new_contact_path() } Contact Us
+
 
 
