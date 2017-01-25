@@ -35,10 +35,11 @@ gem 'sendgrid-ruby'
 gem 'unicorn'
 
 # dev
-# gem 'swell_media', path: '../engines/swell_media'
+gem 'swell_media', path: '../engines/swell_media'
+gem 'swell_theme_stamp', path: '../engines/swell_theme_stamp'
 
 # prod
-gem 'swell_media', git: 'git://github.com/Groundswell/swell_media.git'
+# gem 'swell_media', git: 'git://github.com/Groundswell/swell_media.git'
 
 
 group :development, :test do
